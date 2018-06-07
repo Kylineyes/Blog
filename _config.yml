@@ -1,0 +1,25 @@
+title: "KylinEyes's Blog"
+subtitle: "Code is annotation."
+author: "KylinEyes"
+description: "兴趣所然的个人小站"
+language: "zh-CN"
+timezone: "Hongkong"
+
+theme: icarus
+stylus: 
+        compress: true
+
+menu: 
+  Home: /
+  archives: /archives
+  categories: /categories
+  tags: /tags
+  about: /about
+
+google_analytics: UA-45991394-1
+
+deploy: 
+  type: git
+  repo: https://github.com/Kylineyes/Kylineyes.github.io.git
+  branch: master
+  message: powered by hexo
