@@ -1,6 +1,6 @@
 ---
 title: Python3 学习之路(3) 变量
-date: 2018年6月8日 02:17:36
+date: 2018-6-8 02:17:36
 categories: Python
 tags: 
     - Python
@@ -63,12 +63,12 @@ python 支持 加法、减法、乘法、除法、地板除法、取余、乘方
 字符串可以用截取的语法，格式为：变量[头下标:尾下标]
 
 ```python
-print  (str[0:-1])  # 输出第一个到倒数第二个的所有字符  
-print  (str[0])  # 输出字符串第一个字符  
-print  (str[2:5])  # 输出从第三个开始到第五个的字符  
-print  (str[2:])  # 输出从第三个开始的后的所有字符  
-print  (str * 2)  # 输出字符串两次  
-print  (str + "TEST")  # 连接字符串
+print(str[0:-1])  # 输出第一个到倒数第二个的所有字符  
+print(str[0])  # 输出字符串第一个字符  
+print(str[2:5])  # 输出从第三个开始到第五个的字符  
+print(str[2:])  # 输出从第三个开始的后的所有字符  
+print(str * 2)  # 输出字符串两次  
+print(str + "TEST")  # 连接字符串
 ```
 注意，python里面的字符串(甚至包括其他引用类型)，是以值比较相等的，而不是像java等语言比较内存地址。故两个内存地址不同，但内容相同的字符串做相等判定，答案是True。
 
@@ -85,8 +85,8 @@ tuple的元素不可改变，但它可以包含可变的对象，比如list列�
 构造包含 0 个或 1 个元素的元组比较特殊，所以有一些额外的语法规则：
 
 ```python
-tup1 =  ()  # 空元组
-tup2 =  (20,)  # 一个元素，需要在元素后添加逗号
+tup1 = ()  # 空元组
+tup2 = (20,)  # 一个元素，需要在元素后添加逗号
 ```
 string、list和tuple都属于sequence（序列）。
 
@@ -135,13 +135,13 @@ status = int('10',2) # 构造2进制下的10，即十进制下的2，注意'10'�
 ```
 ## float(x)
 
-```
+```python
 weight = float(50) # 将x转换float型变量
 ```
 
 ## complex(real[,imag])
 
-```
+```python
 a = complex(1) # 构造复数 1 + 0j
 b = complex(-1,5) # 构造复数 -1 ＋５ｊ
 ```
@@ -181,10 +181,11 @@ eval('"hello," + str(0)') # 返回一个值为'hello,0'的string类型
 
 将d转换为字典。
 
-```
+```python
 sex = dict(boy='1',girl='0') #传入关键字
 week = dict([('Mon', 0), ('Tues', 1), ('Wed', 2), 
-             ('Thur', 3), ('Fri', 4), ('Sat', 5), ('Sun', 6)]) #可迭代对象方式来构造字典
+             ('Thur', 3), ('Fri', 4), ('Sat', 5), ('Sun', 6)]) 
+				#可迭代对象方式来构造字典
 ```
 ## frozenset([iterable])
 
@@ -193,10 +194,14 @@ iterable为可迭代的对象，比如列表、字典、元组等等。
 注意，冻结的集合中任意一个元素不能是列表，但是可以直接冻结列表(这里应该看作均为不可变的元素)。
 
 ```python
-tup = (3, 5.0, "test", (2, 2), ([2,3],[3,3])) #元素分别为int、float、string、tuple、带有list的tuple
-list = [321,"test",((2,2),(3,3))] #元素分别为int、string、带有tuple的tuple
-frozenset(tup) # 非法操作，冻结的集合中含有带list的元素
-frozenset(list) # 合法操作，冻结的中不含有带list的元素
+tup = (3, 5.0, "test", (2, 2), ([2,3],[3,3])) 
+	#元素分别为int、float、string、tuple、带有list的tuple
+list = [321,"test",((2,2),(3,3))] 
+	#元素分别为int、string、带有tuple的tuple
+frozenset(tup) 
+	# 非法操作，冻结的集合中含有带list的元素
+frozenset(list) 
+	# 合法操作，冻结的中不含有带list的元素
 ```
 ## chr(x) ord(c)
 

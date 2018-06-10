@@ -1,6 +1,6 @@
 ---
 title: Python3 学习之路(1) 初识
-date: 2018年6月7日 22:36:33
+date: 2018-6-7 22:36:33
 categories: Python
 tags: 
     - Python

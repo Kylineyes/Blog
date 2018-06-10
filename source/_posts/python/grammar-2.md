@@ -1,6 +1,6 @@
 ---
 title: Python3 学习之路(2) 基础语法
-date: 2018年6月8日 01:27:17
+date: 2018-6-8 01:27:17
 categories: Python
 tags: 
     - Python
@@ -13,10 +13,10 @@ banner: /images/python/Python-banner.png
 
 在工程下新建 __main.py__ 文件，向文件写入
 
-```python3
+```python
 print("你好，世界")
 ```
-如果你的文件是UTF-8编码存储的，那么这个文件可以立即运行，如果不是，会报一个 SyntaxError 错误，我建议的解决方法是将存储的文件编码改成UTF-8。
+如果你的文件是UTF-8编码存储的，那么这个文件可以立即运行，如果不是，会报一个 SyntaxError 错误，我建议的解决方法是将存储的文件编码改成UTF-8 without BOM。
 
 同时，我还建议在文件头加入一行`#coding=utf-8`，这样Python会以UTF-8编码解析此文件。而之前没有加入本行也能运行的原因是因为：Python3.X 源码文件默认使用UTF-8编码，所以可以正常解析中文，无需指定UTF-8编码。
 
