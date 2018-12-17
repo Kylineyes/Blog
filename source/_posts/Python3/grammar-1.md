@@ -5,8 +5,8 @@ categories: Python
 tags: 
     - Python
 toc: true
-thumbnail: /images/python/Python-thumbnail.png
-banner: /images/python/Python-banner.png
+thumbnail: /images/Python3/Python-thumbnail.png
+banner: /images/Python3/Python-banner.png
 ---
 
 # Python 简介
@@ -115,5 +115,5 @@ Python的解释器很多，但使用最广泛的还是CPython。如果要和Java
 4. https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431608990315a01b575e2ab041168ff0df194698afac000
 
 
-[^1]:运行效率较低，不适合运算密集型的部分。
-[^2]:当然可以只编写面向过程的部分。
+[^1]: 运行效率较低，不适合运算密集型的部分。
+[^2]: 当然可以只编写面向过程的部分。

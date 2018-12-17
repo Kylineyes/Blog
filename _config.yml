@@ -9,6 +9,9 @@ theme: icarus
 stylus: 
         compress: true
 
+url: https://kylineyes.github.io/
+root: /
+
 menu: 
   Home: /
   archives: /archives

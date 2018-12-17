@@ -5,8 +5,8 @@ categories: Python
 tags: 
     - Python
 toc: true
-thumbnail: /images/python/Python-thumbnail.png
-banner: /images/python/Python-banner.png
+thumbnail: /images/Python3/Python-thumbnail.png
+banner: /images/Python3/Python-banner.png
 ---
 
 # 变量简述
